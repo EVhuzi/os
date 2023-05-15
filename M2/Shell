@@ -1,0 +1,7 @@
+#!/bin/sh
+
+gcc plcs.c -g -o plcs -pthread -Wall
+
+cat char.txt | ./plcs 2 > log.txt
+
+exit 0
